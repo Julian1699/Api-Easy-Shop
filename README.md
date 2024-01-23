@@ -1,50 +1,49 @@
-# Api-Rest-Testing
+# Api-Rest-Intermedian (Gestión de Inventarios de Tienda)
 
-| API REST |  SpringBoot | Spring JPA | Hibernate | H2 | Swagger | JUnit | Mockito | TDD |
+| API REST |  SpringBoot | Spring JPA | Hibernate | Oracle SQL | Swagger | Docker |
 
-![API REST TESTING](https://github.com/Julian1699/Api-Rest-Testing/assets/114323630/7bad6929-315a-424b-83fd-15048dc76a3e)
+![api-swagger-reportes (1)](https://github.com/Julian1699/Api-Easy-Shop/assets/114323630/3df819a6-57cb-409b-a247-9136c67a390f)
 
 # Configuración de la Base de Datos:
 
-Antes de ejecutar la API sin problemas, es importante configurar la base de datos. En este proyecto, hemos utilizado H2 como gestor de base de datos, y el usuario es 'root' con la contraseña también establecida como 'root'. Sin embargo, el proyecto está diseñado para admitir conexiones de otros gestores de bases de datos como MySQL, Oracle SQL y PostgreSQL ya que las dependencias necesarias están definidas en el archivo pom.xml.
+Antes de ejecutar la API sin problemas, es importante configurar la base de datos. En este proyecto, hemos utilizado SQL Developer como gestor de base de datos. Sin embargo, el proyecto está diseñado para admitir conexiones de otras bases de datos como MySQL y PostgreSQL ya que las dependencias necesarias están definidas en el archivo pom.xml.
 
-![image](https://github.com/Julian1699/Api-Rest-Testing/assets/114323630/1eadafc3-1fae-4c35-9877-8879b334b617)
+# Tecnologías Utilizadas:
 
-# Capas testeadas:
+- API REST con SpringBoot
+- Spring JPA y Hibernate
+- Oracle SQL como gestor de base de datos (compatible con PostgreSQL, MySQL y Oracle SQL)
+- Swagger para documentación
+- Generación de reportes en PDF y Excel
 
-![image](https://github.com/Julian1699/Api-Rest-Testing/assets/114323630/f8972de9-588c-4a46-bef1-81d2f7830d8a)
+# Características Principales:
 
-# Empleo de Junit y Mockito:
+API diseñada para gestionar el inventario de productos de una tienda.
+Incluye funcionalidades para crear, leer, actualizar, eliminar y buscar productos.
 
-![image](https://github.com/Julian1699/Api-Rest-Testing/assets/114323630/988abbb0-6e03-49db-a871-803beefe834c)
+# Endpoints:
 
-# Ejecución de TDD en la capa del controlador (TEST DRIVEN DEVELOPMENT)
+- GET /api/v1/product/all: Obtiene todos los productos.
+- POST /api/v1/product/post: Agrega un nuevo producto.
+- PUT /api/v1/product/put/{id}: Actualiza un producto existente.
+- DELETE /api/v1/product/delete/{id}: Elimina un producto.
+- GET /api/v1/product/id/{id}: Obtiene un producto por su ID.
+- GET /api/v1/product/search/{search}: Busca productos por nombre, referencia o categoría.
+- GET /api/v1/product/export/pdf: Genera un reporte en formato PDF de todos los productos.
+- GET /api/v1/product/export/excel: Genera un reporte en formato Excel de todos los productos.
+- 
+# Documentación y Pruebas:
 
-![image](https://github.com/Julian1699/Api-Rest-Testing/assets/114323630/e2f12ac5-cab1-4cda-a084-fd3c1d1b72bb)
-
-# API de Productos
+- Disponible en Swagger: http://localhost:8080/swagger-ui/index.html#/
+- La API está diseñada para ser intuitiva y fácil de usar para desarrolladores.
   
-Esta API RESTful proporciona una manera de gestionar datos de productos utilizando Spring Boot. Está diseñada para ser utilizada por desarrolladores que necesitan crear, leer, actualizar y eliminar productos.
+# Comentarios Adicionales:
 
-# La API proporciona las siguientes características:
-
-- Obtener todos los productos: Recupera una lista de todos los productos disponibles en la base de datos.
-- Agregar un nuevo producto: Agrega un nuevo producto a la base de datos.
-- Actualizar un producto existente: Actualiza un producto existente en la base de datos.
-- Eliminar un producto existente: Elimina un producto existente de la base de datos.
-- Obtener un producto por ID: Recupera un producto por su identificador único.
-- Buscar productos: Busca productos por nombre, referencia o categoría.
-- Tecnologías utilizadas
-
-# La API está construida utilizando las siguientes tecnologías:
-
-- Java 17: La versión de Java.
-- Spring Boot 3.0.10: Un potente marco de trabajo para construir aplicaciones web basadas en Java.
-- Spring Data JPA: Simplifica el acceso y la gestión de bases de datos.
-- Swagger: Proporciona documentación interactiva de la API.
-- Hibernate Validator: Para la validación de los datos enviados en las solicitudes.
-- Lombok: Reduce el código repetitivo.
-- Cross-Origin Resource Sharing (CORS): Permite solicitudes entre dominios desde aplicaciones web.
+- La API está construida con Java 17 y Spring Boot 3.0.10.
+- Utiliza Spring Data JPA para simplificar el acceso y la gestión de bases de datos.
+- Incluye Hibernate Validator para la validación de datos.
+- Utiliza Lombok para reducir el código repetitivo.
+- Implementa Cross-Origin Resource Sharing (CORS) para permitir solicitudes entre dominios.
 
 # Documentación
 
