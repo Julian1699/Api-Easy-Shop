@@ -6,7 +6,15 @@
 
 # Configuración de la Base de Datos:
 
-Antes de ejecutar la API sin problemas, es importante configurar la base de datos. En este proyecto, hemos utilizado SQL Developer como gestor de base de datos. Sin embargo, el proyecto está diseñado para admitir conexiones de otras bases de datos como MySQL y PostgreSQL ya que las dependencias necesarias están definidas en el archivo pom.xml.
+Antes de ejecutar la API sin inconvenientes, es crucial configurar la base de datos. En este proyecto, hemos utilizado SQL Developer como gestor de base de datos. No obstante, el diseño del proyecto permite la conexión con otras bases de datos como MySQL y PostgreSQL, gracias a que las dependencias necesarias se encuentran definidas en el archivo pom.xml.
+
+![image](https://github.com/Julian1699/Api-Easy-Shop/assets/114323630/9ab005f3-c640-49de-b983-e64dbbe4a8e3)
+
+# Datos de prueba:
+
+Se incluye un archivo .sql que contiene scripts para insertar datos en la base de datos una vez que la API esté en funcionamiento.
+
+![image](https://github.com/Julian1699/Api-Easy-Shop/assets/114323630/cb1a38b9-f772-4901-be0b-085b38016365)
 
 # Tecnologías Utilizadas:
 
@@ -31,7 +39,7 @@ Incluye funcionalidades para crear, leer, actualizar, eliminar y buscar producto
 - GET /api/v1/product/search/{search}: Busca productos por nombre, referencia o categoría.
 - GET /api/v1/product/export/pdf: Genera un reporte en formato PDF de todos los productos.
 - GET /api/v1/product/export/excel: Genera un reporte en formato Excel de todos los productos.
-- 
+  
 # Documentación y Pruebas:
 
 - Disponible en Swagger: http://localhost:8080/swagger-ui/index.html#/
